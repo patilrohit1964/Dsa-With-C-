@@ -3,8 +3,10 @@ using namespace std;
 
 int main()
 {
-    int i = 1;
-    while (i <= 10)
+    int i;
+    cout << "Enter value: ";
+    cin >> i;
+    while (i >= 1)
     {
         if (i % 2 == 0)
         {
@@ -14,6 +16,6 @@ int main()
         {
             cout << i << " is Odd" << endl;
         }
-        i++;
+        i--;
     }
 }
