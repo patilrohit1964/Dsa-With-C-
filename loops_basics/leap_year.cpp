@@ -3,10 +3,16 @@ using namespace std;
 
 int main()
 {
-    int i = 2000;
-    while (i <= 3000)
+    int year = 2000;
+
+    while (year <= 3000)
     {
-        cout << i << " is leap year" << endl;
-        i += 4;
+        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+        {
+            cout << year << " ";
+        }
+        year++;
     }
+
+    return 0;
 }
