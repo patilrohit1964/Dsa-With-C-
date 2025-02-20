@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main()
+{
     int r, c;
 
     cout << "Enter number of rows: ";
@@ -12,8 +13,10 @@ int main() {
     int arr[r][c];
 
     cout << "Enter elements of the array:\n";
-    for (int i = 0; i < r; i++) {
-        for (int j = 0; j < c; j++) {
+    for (int i = 0; i < r; i++)
+    {
+        for (int j = 0; j < c; j++)
+        {
             cin >> arr[i][j];
         }
     }
@@ -21,12 +24,16 @@ int main() {
     int minElement = arr[0][0];
     int maxElement = arr[0][0];
 
-    for (int i = 0; i < r; i++) {
-        for (int j = 0; j < c; j++) {
-            if (arr[i][j] < minElement) {
+    for (int i = 0; i < r; i++)
+    {
+        for (int j = 0; j < c; j++)
+        {
+            if (arr[i][j] < minElement)
+            {
                 minElement = arr[i][j];
             }
-            if (arr[i][j] > maxElement) {
+            if (arr[i][j] > maxElement)
+            {
                 maxElement = arr[i][j];
             }
         }
